@@ -13,7 +13,7 @@ checkmarx:
         presetName: 'All' 
         fastScanMode: 'true'
         # configure if this specific project will be run incrementally or will it run a full scan
-        incremental: 'false'
+        incremental: 'true'
         languageMode: 'multi'
         filter: '!*.java,!*.cpp'
         engineVerbose: 'true'
