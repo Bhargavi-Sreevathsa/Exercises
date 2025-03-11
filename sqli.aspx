@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         This page is vulnerable to SQL Injection and second order SQL Injection. 
         <br /><br />
-        <asp:TextBox ID="name" runat="server" /> <asp:Button runat="server" ID="submit" OnClick="submit_Click" Text="Submit" />
+        <asp:TextBox ID="name" runat="server" /> <asp:Button runat="Server" ID="submit" OnClick="submit_Click" Text="Submit" />
         <br /><br />
         <asp:Label ID="message" runat="server" />
     </form>
