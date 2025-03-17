@@ -25,4 +25,4 @@ jobs:
           # GitHub API Token
           github_token:  ${{ github.token }}
           # Additional parameters for AST scan
-          additional_params: --sast-incremental, --sast-preset-name "Checkmarx Default", --scan-types sast 
+          additional_params: --scan-types sast,kics 
