@@ -28,7 +28,3 @@ jobs:
           additional_params: --scan-types sast
           # Repository name for PR decoration
           repo_name: ${{ github.repository.name }}
-          # Organization name to create the Pr comment
-          namespace: ${{ github.repository_owner }}
-          # Pr Number of the pull request that needs the decoration
-          # pr_number: ${{ github.event.number }}
