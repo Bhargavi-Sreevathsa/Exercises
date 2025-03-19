@@ -24,7 +24,5 @@ jobs:
           branch: ${{ github.ref }}
           # GitHub API Token
           github_token:  ${{ github.token }}
-          # Additional parameters for AST scan
-          additional_params: --scan-types sast
           # Repository name for PR decoration
           repo_name: ${{ github.repository.name }}
