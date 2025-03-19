@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkmarx AST Github Action
-        uses: Checkmarx/ast-github-action@main
+        uses: Checkmarx/ast-github-action@2.0.23
         with:
           # Provide the AST portal URL
           base_uri: https://deu.ast.checkmarx.net/
