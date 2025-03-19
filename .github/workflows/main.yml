@@ -31,4 +31,4 @@ jobs:
           # Organization name to create the Pr comment
           namespace: ${{ github.repository_owner }}
           # Pr Number of the pull request that needs the decoration
-          pr_number: ${{ github.event.number }}
+          # pr_number: ${{ github.event.number }}
