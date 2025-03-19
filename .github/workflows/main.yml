@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkmarx AST Github Action
-        uses: Checkmarx/ast-github-action@2.0.23
+        uses: Checkmarx/ast-github-action@main
         with:
           # Provide the AST portal URL
           base_uri: https://deu.ast.checkmarx.net/
@@ -18,3 +18,17 @@ jobs:
           cx_client_id: ${{ secrets.CLIENT_ID }}
           # Secret key for AST portal authentication
           cx_client_secret: ${{ secrets.SECRET }}
+          # Select a Checkmarx Project Name
+          project_name: ${{ github.repository }}
+          # Branch name
+          branch: ${{ github.ref }}
+          # GitHub API Token
+          github_token:  ${{ github.token }}
+          # Additional parameters for AST scan
+          additional_params: --scan-types sast
+          # Repository name for PR decoration
+          repo_name: ${{ github.repository.name }}
+          # Organization name to create the Pr comment
+          namespace: ${{ github.repository_owner }}
+          # Pr Number of the pull request that needs the decoration
+          # pr_number: ${{ github.event.number }}
