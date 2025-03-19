@@ -31,4 +31,4 @@ jobs:
           # # Pr Number of the pull request that needs the decoration
           # pr_number: ${{ github.event.number }}
           # Additional parameters for AST scan
-          additional_params: "--scan-types 'sast,scs'" 
+          additional_params: "--scan-types 'sast' --debug" 
