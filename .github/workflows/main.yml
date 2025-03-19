@@ -25,7 +25,7 @@ jobs:
           # GitHub API Token
           github_token:  ${{ github.token }}
           # Additional parameters for AST scan
-          additional_params: --scan-types sast,kics
+          #additional_params: 
           # Repository name for PR decoration
           repo_name: ${{ github.repository.name }}
           # Organization name to create the Pr comment
