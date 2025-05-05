@@ -39,6 +39,6 @@ jobs:
             --branch ${GITHUB_REF##*/} \
             --base-uri ${{ secrets.CX_BASE_URI }} \
             --tenant ${{ secrets.CX_TENANT }} \
-            --client-id ${{ secrets.CX_CLIENT_ID }} \
-            --client-secret ${{ secrets.CX_CLIENT_SECRET }} \
+            --client-id ${{ secrets.CLIENT_ID }} \
+            --client-secret ${{ secrets.SECRET }} \
             --sca-resolver ./ScaResolver
